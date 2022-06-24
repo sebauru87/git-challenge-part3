@@ -14,4 +14,9 @@ In this lesson we have seen what Cherry Picking is and when to use it. Now we wi
 
     c. You should merge this solution into `main` as soon as possible to resolve the bug, but you're not ready to merge the entire `feature-a` branch yet, so now you want to merge just `(commit 2)`. Create a cherry pick to do so. What command would you use?
 
+    ```bash
+    $ git checkout main
+    $ git cherry-pick -x hashOfTheCommit
+    ```
+
 3.  Notice how your `(commit 2)` is now in both `main` and `feature-a`. This is what we explained in the theory part that using Cherry Pick creates duplicate commits.
